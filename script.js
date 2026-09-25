@@ -41,7 +41,7 @@ async function searchMovies(movieName) {
     try {
 
         let response = await fetch(
-            `http://www.omdbapi.com/?apikey=e14b7671&s=${encodeURIComponent(movieName)}`
+            `https://www.omdbapi.com/?apikey=e14b7671&s=${encodeURIComponent(movieName)}`
         );
 
         let data = await response.json();
